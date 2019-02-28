@@ -107,7 +107,7 @@ let updateInv =(currentProduct)=>{
         }
     }
     ]).then(function(answers){
-        console.log('SELECTED...',answers)
+       // console.log('SELECTED...',answers)
         connection.query("SELECT product_name, stock_quantity FROM products WHERE ?",{product_name:answers.item},function(err,res){
             if(err) {
                 console.log('Error getting data from db', err)
