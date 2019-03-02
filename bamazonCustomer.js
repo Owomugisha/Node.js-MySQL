@@ -12,6 +12,7 @@ var connection = mysql.createConnection({
     database: "bamazon"
 })
 
+
 let choices = []
 let currentProducts = []
 // connection.query('SELECT * FROM products', function(err, results){
